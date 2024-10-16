@@ -1,5 +1,5 @@
 import '@/assets/styles/global.css'
-
+import Navbar from '@/components/Navbar'
 // efficient SEO from server side
 export const metadata = {
     title: "ground bnb",
@@ -10,6 +10,7 @@ export const metadata = {
 const MainLayout = ({ children }) => {
     return <html>
         <body>
+            <Navbar />
             <main>
                 {children}
             </main>
